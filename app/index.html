@@ -1,0 +1,284 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="Polymer Starter Kit">
+  <title>Polymer Starter Kit</title>
+
+ 
+  <meta name="theme-color" content="#2E3AA1">
+
+  
+  <link rel="manifest" href="manifest.json">
+
+  <meta name="msapplication-TileColor" content="#3372DF">
+
+
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="PSK">
+  <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Polymer Starter Kit">
+  <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+
+  <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+
+
+  <link rel="stylesheet" href="styles/main.css">
+
+  <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+   <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
+
+  <link rel="import" href="elements/elements.html">
+  <link rel="import" href="bower_components/google-map/google-map.html">
+    <link rel="import" href="bower_components/paper-card/paper-card.html">
+    <link rel="import" href="bower_components/paper-button/paper-button.html">
+  
+  <style is="custom-style" include="shared-styles"></style>
+   <style>
+  body {
+      position: relative; 
+  }
+  #section1 {padding-top:50px;height:500px;color: #fff; background-color: #d1d1e0;}
+  #section2 {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}
+  #section3 {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}
+  #section41 {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
+  #section42 {padding-top:50px;height:500px;color: #fff; background-color: #009688;}
+
+  .jumbotron {
+    padding-top: 50px;
+   padding-bottom: 330px;
+  background-color:#5ACDFF;
+  color: #404040;
+
+
+    background-image: url("http://i.imgur.com/dpH5XZE.jpg?1");
+    background-repeat : no-repeat;
+    background-color : #000;
+    background-size: cover;
+    background-position-y: -50px;
+
+
+  
+}
+#des {
+  color: #000;
+    font-size: 400%;
+}
+p.sansserif {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 250%;
+}
+
+  </style>
+
+
+</head>
+
+
+
+<body unresolved ata-spy="scroll" data-target=".navbar" data-offset="50">
+
+  <span id="browser-sync-binding"></span>
+  <template is="dom-bind" id="app">
+
+    <paper-drawer-panel id="paperDrawerPanel">
+      <!-- Drawer Scroll Header Panel -->
+      <paper-scroll-header-panel drawer fixed>
+
+        <!-- Drawer Toolbar -->
+        <paper-toolbar id="drawerToolbar">
+          <span class="menu-name">Menu</span>
+        </paper-toolbar>
+
+        <!-- Drawer Content -->
+        <paper-menu attr-for-selected="data-route" selected="[[route]]">
+          <a data-route="home" href="{{baseUrl}}">
+            <iron-icon icon="home"></iron-icon>
+            <span>Home</span>
+          </a>
+
+          <a data-route="About Us" href="{{baseUrl}}users">
+            <iron-icon icon="info"></iron-icon>
+            <span>About Us</span>
+          </a>
+
+          <a data-route="contact" href="{{baseUrl}}contact">
+            <iron-icon icon="mail"></iron-icon>
+            <span>Contact</span>
+          </a>
+        </paper-menu>
+<br />
+<br />
+
+    <paper-card image="http://lorempixel.com/g/400/200/">
+     <div class="card-content">
+    <br />BARISTA in the morning,   
+    <br />ATHLETE at night. 
+    <br />SOFTWARE ENGINEER 
+    <br />all day, every day
+   </div>
+   <div class="card-actions">
+    <paper-button><iron-icon icon="check"></iron-icon>check</paper-button>
+    <paper-button toggles><iron-icon icon="favorite"></iron-icon>like it</paper-button>
+  </div>
+      </paper-card>
+     
+
+      </paper-scroll-header-panel>
+
+   
+     
+      <!-- Main Area -->
+
+
+      <paper-scroll-header-panel main id="headerPanelMain" condenses keep-condensed-header>
+        <!-- Main Toolbar -->
+        <paper-toolbar id="mainToolbar">
+          <paper-icon-button id="paperToggle" icon="menu" paper-drawer-toggle></paper-icon-button>
+
+          <span class="space"></span>
+
+          <!-- Toolbar icons -->
+          <paper-icon-button icon="refresh"></paper-icon-button>
+          <paper-icon-button icon="search"></paper-icon-button>
+
+          <!-- Application name -->
+          <div class="middle middle-container">
+            <div class="app-name">Bay Street BBS</div>
+          </div>
+
+     <!--      <!-- Application sub title -->
+          <!-- <div class="bottom bottom-container">
+            <div class="bottom-title">The future of your career</div>
+          </div> -->
+        </paper-toolbar> 
+
+        <!-- Main Content -->
+
+
+
+<div class="jumbotron" >
+ <div class="container">
+  <div class="row">
+    <div class='col-sm-12 text-center'>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <!-- <p id="des">BayStreet Professionals Group</p> -->
+  <h1 class="sansserif">BayStreet Professionals Group</h1>
+    <p>
+      <a class="btn btn-lg btn-primary" href="https://www.facebook.com/sharer/sharer.php?u={{ request.build_absolute_uri }}" role="button">enter BBS</a></p>
+    </div>
+    
+      <!-- <img src="{{ featured_image.image.url }}" class="img-responsive" />
+ -->
+   
+    </div>
+  </div>
+ </div>
+
+        <div class="content">
+          <iron-pages attr-for-selected="data-route" selected="{{route}}">
+            <section data-route="home">
+              <paper-material elevation="1">
+                <my-greeting></my-greeting>
+
+                <p class="subhead">You now have:</p>
+                <my-list></my-list>
+
+
+              </paper-material>
+
+
+
+              <paper-material elevation="1">
+                <h1>new block</h1>
+                
+              </paper-material>
+            </section>
+
+            <section data-route="users">
+
+
+<div class="row">
+  
+
+  <div class="col-sm-6"><paper-material elevation="1">
+                <h2  class="sansserif">About Us</h2>
+                <p>About BayStreet Professionals Group Press</p>
+                <div class="info">The mission of BayStreet Professionals Group is to provide members with a long-term platform for networking, friendship, career development and professional community experience.
+<br />
+Bay Street BBS is a institution that offers career-related information and training to students and professionals working in finance, technology and management. Bay Street BBS provides many opportunities to grow, engaging its members in skills and career development. Through successful collaborations with diverse organizations including financial institutions, universities, as well as other professi[about-me id=”1″]onal associations, this program has developed a unique, one-of-a-kind set of skills that would otherwise be unavailable.
+<br />
+<br />
+Bay Street BBS has also contributed to many charities within and outside of Canada raising funds and awareness for educational purposes. Expanding across social media, the Bay Street BBS community has quickly grown to a staggering 11000 people (3600 on Facebook, 2600 on LinkedIn and 5000 Wechat)
+</div>
+              </paper-material></div>
+              <div class="col-sm-6">
+
+  <paper-material elevation="1">
+  <h2  class="sansserif">Our Location</h2>
+  <br />
+              <google-map latitude="43.66" longitude="-79.39" fit-to-markers>
+              <google-map-marker latitude="43.66" longitude="-79.39"
+      draggable="true" title="Go Giants!"></google-map-marker></google-map>
+      <br />
+              </paper-material>
+
+            </div>
+ 
+</div>
+            
+              
+            </section>
+
+            <section data-route="user-info">
+              <paper-material elevation="1">
+                <h2 class="page-title">User: {{params.name}}</h2>
+                <div>This is {{params.name}}'s section</div>
+              </paper-material>
+            </section>
+
+            <section data-route="contact">
+              <paper-material elevation="1">
+
+                <google-map latitude="43.66" longitude="-79.39" fit-to-markers>
+              <google-map-marker latitude="43.66" longitude="-79.39"
+      draggable="true" title="Go Giants!"></google-map-marker></google-map>
+              </paper-material>
+            </section>
+
+
+          </iron-pages>
+        </div>
+      </paper-scroll-header-panel>
+    </paper-drawer-panel>
+
+    <paper-toast id="toast">
+      <span class="toast-hide-button" role="button" tabindex="0" onclick="app.$.toast.hide()">Ok</span>
+    </paper-toast>
+
+  </template>
+
+  <!-- build:js scripts/app.js -->
+  <script src="scripts/app.js"></script>
+  <!-- endbuild-->
+</body>
+
+</html>
