@@ -1,1 +1,1 @@
-first try of polymer
+using polymer to implement a bbs main-page!
